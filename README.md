@@ -1,40 +1,83 @@
 # kx-introduction
 
-This repository offers a structured introduction to **kdb+/q**, encompassing foundational concepts, practical exercises, and advanced topics.  
-It's designed for newcomers to the Kx ecosystem as well as those looking to reinforce their understanding.
+This repository provides an introductory guide to working with the **q programming language** and **kdb+**, a high-performance time-series database from [KX](https://kx.com/). It is intended for developers, data engineers, and analysts who want to get hands-on experience with the q language and understand the fundamentals of kdb+.
 
-## 📚 Contents
+## 📘 Overview
 
-The repository is organized into the following sessions:
+The repository contains:
 
-1. **Session 1: qSQL**  
-   Introduction to querying in q, covering basic SELECT statements, WHERE clauses, and aggregations.
+- A set of q scripts to explore the syntax, data types, and operations in q.
+- Examples of table creation, joins, aggregation, and functional programming features in q.
+- Notes and comments to help beginners understand the q language.
 
-2. **Session 2: Joins**  
-   Exploration of different join types in q, including inner, outer, and asof joins.
+## 🧠 What is q/kdb+?
 
-3. **Session 3: Data Structures**  
-   Deep dive into q's data structures such as lists, dictionaries, and tables.
+- **q** is a concise, expressive programming language built for working with large-scale time-series data.
+- **kdb+** is a columnar, in-memory database optimized for real-time and historical data analytics, particularly used in finance, telecom, and IoT.
 
-4. **Session 4: Functions**  
-   Understanding function definitions, lambda expressions, and functional programming paradigms in q.
+## 📁 Contents
 
-5. **Session 5: Loading Data and IPC**  
-   Techniques for importing data into kdb+, and an overview of Inter-Process Communication (IPC) mechanisms.
+- `kx-introduction.q`: A single q script that introduces:
+  - Basic q syntax and expressions
+  - Lists, dictionaries, and tables
+  - Select and update statements
+  - Functional programming in q
+  - Data manipulation examples
 
-## 📁 Repository Structure
+## ⚙️ Setup Instructions
 
-- **scripts/**: Contains q scripts corresponding to each session.
-- **data/**: Sample datasets used in exercises and demonstrations.
-- **images/**: Visual aids and diagrams to support the learning material.
+### 1. Download and Install kdb+
 
-## 🚀 Getting Started
+Visit the [official KX downloads page](https://kx.com/developers/) to get the free personal edition of kdb+.
 
-1. **Prerequisites**:
-   - Install [kdb+](https://kx.com/kdbplus/) on your system.
-   - Ensure you have [Jupyter Notebook](https://jupyter.org/) installed for running `.ipynb` files.
+Follow the installation instructions for your platform.
 
-2. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/chankeypathak/kx-introduction.git
-   cd kx-introduction
+### 2. Clone the Repository
+
+```bash
+git clone https://github.com/chankeypathak/kx-introduction.git
+cd kx-introduction
+```
+
+### 3. Run the Script
+
+Start the q session:
+
+```bash
+q
+```
+
+Then load the script:
+
+```q
+\l kx-introduction.q
+```
+
+You can also run the script directly from the shell:
+
+```bash
+q kx-introduction.q
+```
+
+## 🧪 Learning Objectives
+
+By the end of this tutorial, you will be able to:
+
+- Write basic q expressions
+- Understand kdb+ data structures
+- Perform time-series operations in q
+- Use functional programming idioms in q
+
+## 📚 Recommended Resources
+
+- [q for Mortals](https://code.kx.com/q4m3/)
+- [KX Academy](https://kx.com/academy/)
+- [KDB+ Reference Manual](https://code.kx.com/q/)
+
+## 🤝 Contributions
+
+Feel free to submit PRs or open issues to suggest improvements or request features.
+
+## 📝 License
+
+This repository is provided for educational purposes. No explicit license is included.
